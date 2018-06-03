@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  http_basic_authenticate_with name: "MixMaster", password: "Sx1!", only: :destroy
+  
   def new
   end
   
